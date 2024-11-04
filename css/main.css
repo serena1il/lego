@@ -501,6 +501,10 @@
     padding: 0;
 }
 
+.wishlist-btn.filled {
+    background: url(../img/wishlist-fill.svg); /* 채워진 하트 이미지 */
+}
+
 .slider-info {
     display: flex;
     flex-direction: row;
@@ -736,6 +740,10 @@
     margin-left: auto;
 }
 
+.wish-btn.filled {
+    background: url(../img/wishlist-fill.svg); /* 채워진 하트 이미지 */
+}
+
 /*  */
 
 /*  */
@@ -761,7 +769,7 @@ footer a {
 
 .footer-logo {
     width: 6.2rem;
-    height: 6.2rem;
+    height: 5rem;
     margin-top: 13.2rem;
 }
 

@@ -21,6 +21,20 @@ $(function () {
 
     // //
 
+    document.querySelectorAll(".wishlist-btn").forEach((button) => {
+        button.addEventListener("click", function () {
+            this.classList.toggle("filled"); // 클릭 시 filled 클래스 토글
+        });
+    });
+
+    document.querySelectorAll(".wish-btn").forEach((button) => {
+        button.addEventListener("click", function () {
+            this.classList.toggle("filled"); // 클릭 시 filled 클래스 토글
+        });
+    });
+
+    // //
+
     const topSlider = new Swiper(".top-slider", {
         // Optional parameters
         direction: "horizontal", // vertical
