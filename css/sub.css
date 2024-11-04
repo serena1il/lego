@@ -186,6 +186,10 @@ nav {
     padding: 0;
 }
 
+.wishlist-btn.filled {
+    background-image: url(../img/wishlist-fill.svg); /* 채워진 하트 이미지 */
+}
+
 .product-gallery {
     width: 100%;
     overflow: hidden;

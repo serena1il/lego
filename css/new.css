@@ -334,9 +334,9 @@
 
 .asset-card {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    width: 35rem;
 }
 
 .asset-card p {
@@ -363,6 +363,13 @@
     cursor: pointer;
     transition: transform 0.3s ease;
     transform: translateY(40px);
+}
+
+.new-wish.filled {
+    background-image: url(../img/wishlist-fill2.svg); /* 채워진 하트 이미지 */
+}
+.wishlist-btn.filled {
+    background-image: url(../img/wishlist-fill.svg); /* 채워진 하트 이미지 */
 }
 
 /*  */

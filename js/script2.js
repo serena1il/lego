@@ -48,4 +48,10 @@ $(function () {
             $(".sort-label").text(selectedText); // span 텍스트 업데이트
         });
     });
+
+    document.querySelectorAll(".wishlist-btn").forEach((button) => {
+        button.addEventListener("click", function () {
+            this.classList.toggle("filled"); // 클릭 시 filled 클래스 토글
+        });
+    });
 });

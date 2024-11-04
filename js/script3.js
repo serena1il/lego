@@ -19,6 +19,17 @@ $(function () {
         $("html, body").animate({ scrollTop: 0 }, 600); // 600밀리초 동안 부드럽게 스크롤
     });
 
+    document.querySelectorAll(".wishlist-btn").forEach((button) => {
+        button.addEventListener("click", function () {
+            this.classList.toggle("filled"); // 클릭 시 filled 클래스 토글
+        });
+    });
+    document.querySelectorAll(".new-wish").forEach((button) => {
+        button.addEventListener("click", function () {
+            this.classList.toggle("filled"); // 클릭 시 filled 클래스 토글
+        });
+    });
+
     // //
 
     // document.addEventListener("DOMContentLoaded", function () {
