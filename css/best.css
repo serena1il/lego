@@ -99,7 +99,7 @@
 
 /*  */
 .visual {
-    background-image: url("../img/new-visual.jpg");
+    background-image: url("../img/best-visual.jpg");
     background-size: cover;
     background-position: center;
     height: 80rem;
@@ -210,8 +210,38 @@
 }
 
 /*  */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    counter-reset: product-counter; /* 카운터 초기화 */
+}
 
-.new-products h2 {
+.product-item {
+    position: relative; /* 숫자가 표시될 위치 기준 */
+    width: 42.7rem;
+    height: 52.7rem;
+    margin-top: 3.6rem;
+}
+
+.product-item::before {
+    counter-increment: product-counter; /* 각 항목마다 카운터 증가 */
+    content: counter(product-counter); /* 카운터 숫자 표시 */
+    font-size: 3rem; /* 숫자 크기 조정 */
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: var(--text-color);
+    padding: 0 1rem;
+}
+
+.product-item:nth-child(-n + 3)::before {
+    color: var(--main-color); /* 첫 3개의 아이템에 메인 컬러 적용 */
+    border-bottom: 3px solid var(--main-color);
+}
+
+.product-section h2 {
     font-weight: 700;
     font-size: 4.2rem;
     margin-top: 12.5rem;
@@ -229,12 +259,6 @@
     border-radius: 2rem;
 }
 
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-}
-
 .product-card {
     display: flex;
     align-items: center;
@@ -242,11 +266,12 @@
     padding-top: 2rem;
 }
 
-.product-item dl dt {
+.product-card h3 {
     font-weight: 700;
     font-size: 3rem;
 }
-.product-item dl dd {
+
+.product-card p {
     font-weight: 600;
     font-size: 2.5rem;
 }
@@ -270,206 +295,33 @@
     background-image: url(../img/wishlist-fill.svg); /* 채워진 하트 이미지 */
 }
 /*  */
-.new-slider-wrap {
-    width: 100%; /* 슬라이더가 부모 요소의 전체 폭을 차지하도록 설정 */
-    max-width: 122.4rem; /* 예시로 설정한 최대 너비 */
-}
 
-.swiper {
-    width: 100%; /* 슬라이더의 너비를 100%로 설정 */
-    height: 68.7rem; /* 원하는 높이 설정 */
-}
-
-.new-slider {
-    margin: 0;
+.view-all {
     display: flex;
-}
-
-.swiper-container {
-    width: 100%;
-    height: 100%;
-}
-
-.swiper-wrapper {
-    display: flex;
-}
-
-.new {
-    margin-top: 10rem;
-    display: flex;
-
-    gap: 4rem;
-    align-items: center;
+    width: 24.8rem;
+    height: 6rem;
     justify-content: center;
-}
-
-.new-card {
-    overflow: hidden;
-}
-
-.new-card img {
-    border-radius: 4rem 4rem 15rem 4rem;
-    width: 122.4rem;
-}
-
-.swiper-button-prev,
-.swiper-button-next:after,
-.swiper-rtl .swiper-button-prev:after,
-.swiper-button-prev:after,
-.swiper-rtl .swiper-button-next:after {
-    display: flex;
-    color: #fff;
-    cursor: pointer;
-    border: none;
-    position: relative;
-}
-
-.swiper-pagination {
-    display: flex;
-    width: 1rem;
-    height: 1rem;
-    background: var(--main-color);
     align-items: center;
-    justify-content: center;
     text-align: center;
-    padding: 0 0 0 2rem;
-    border-radius: 10rem;
-}
-
-.swiper-pagination-bullet {
-    background: #fff;
-    opacity: 1;
-}
-
-.swiper-pagination-bullet-active {
-    background: var(--main-color);
-    width: 1.5rem;
-    border-radius: 30rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-/*  */
-.asset-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-}
-.asset-item {
-    display: flex;
-    gap: 2rem;
-}
-
-.asset-item img {
-    width: 14.1rem;
-    height: 14.1rem;
-}
-
-.asset-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 35rem;
-}
-
-.asset-card p {
+    margin: 0 auto;
+    margin-top: 8rem;
     font-weight: 600;
     font-size: 2rem;
-    color: #9d9d9d;
-}
-.asset-card dt {
-    font-weight: 700;
-    font-size: 3rem;
-}
-.asset-card dd {
-    margin-top: 1rem;
-    font-weight: 600;
-    font-size: 2.5rem;
+    border: 1px solid #000;
 }
 
-.new-wish {
-    background-image: url(../img/new-wish.svg);
-    width: 3rem;
-    height: 3rem;
-    background-color: transparent;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    transform: translateY(40px);
-    transition: transform 0.3s ease;
-    transform: scale(1);
+.view-all img {
+    width: 3.5rem;
+    height: 3.5rem;
 }
 
-.new-wish:hover {
-    transform: scale(1.1);
+.view-all:hover {
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
 }
-.new-wish.filled {
-    background-image: url(../img/wishlist-fill2.svg); /* 채워진 하트 이미지 */
-}
+
 /*  */
 
-.journey h2 {
-    font-weight: 700;
-    font-size: 4.2rem;
-    margin-top: 12.5rem;
-}
-
-.journey-content {
-    display: flex;
-    gap: 2rem;
-}
-
-.journey-item {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    position: relative;
-}
-
-.journey-item h3 {
-    font-weight: 700;
-    font-size: 3.2rem;
-    color: #fff;
-    position: absolute;
-    top: 3rem;
-    left: 3rem;
-    z-index: 1;
-}
-
-.journey-item p {
-    font-size: 1.8rem;
-    color: #fff;
-    position: absolute;
-    top: 8rem;
-    left: 3rem;
-    z-index: 3;
-}
-
-.journey-item img {
-    border-radius: 2rem;
-    transition: 0.4s;
-}
-
-.journey-link {
-    width: 3.6rem;
-    height: 3.6rem;
-    background: var(--main-color);
-    position: absolute;
-    z-index: 1;
-    border-radius: 3rem;
-    bottom: 3rem;
-    left: 3rem;
-}
-
-.journey-link:hover {
-    background: #fff;
-}
-
-.journey-con img:hover {
-    filter: brightness(70%);
-}
-/*  */
 footer {
     display: flex;
     background: var(--main-color);
@@ -492,7 +344,7 @@ footer a {
 .footer-logo {
     width: 6.2rem;
     height: 6.2rem;
-    margin-top: 7rem;
+    margin-top: 13.2rem;
 }
 
 .footer-logo a {
@@ -514,8 +366,7 @@ footer a:hover {
 .social-links {
     display: flex;
     flex-direction: row;
-    margin-top: 5rem;
-    height: 6rem;
+    margin-top: 8rem;
 }
 
 .social-links p {

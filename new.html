@@ -11,9 +11,10 @@
         <link rel="stylesheet" href="./css/common.css" />
         <link rel="stylesheet" href="./css/new.css" />
 
-        <!-- Swiper JS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="./js/script3.js" defer></script>
     </head>
@@ -27,7 +28,7 @@
                     </h1>
                     <ul class="gnb">
                         <li><a href="new.html">New</a></li>
-                        <li><a href="#best">Best</a></li>
+                        <li><a href="best.html">Best</a></li>
                         <li><a href="#event">Event</a></li>
                         <li><a href="#Theme">Theme</a></li>
                         <li><a href="sub.html">shop</a></li>
@@ -50,170 +51,182 @@
             </div>
         </header>
 
-        <section class="visual">
-            <div class="inner">
-                <div class="visual-content">
-                    <strong></strong>
-                    <p></p>
-                    <h1 class="visual-title"></h1>
+        <main>
+            <section class="visual">
+                <div class="inner">
+                    <div class="visual-content">
+                        <strong></strong>
+                        <p></p>
+                        <h1 class="visual-title">상상력을 자극하는 레고 신제품</h1>
+                    </div>
                 </div>
+            </section>
+
+            <div class="location">
+                <a href="index.html" class="home-link"><img src="./img/home.svg" alt="" /></a>
+                <div class="arrow"></div>
+                <a href="#" class="location-link">New</a>
             </div>
-        </section>
 
-        <div class="location">
-            <a href="index.html" class="home-link"><img src="./img/home.svg" alt="" /></a>
-            <div class="arrow"></div>
-            <a href="#" class="location-link">New</a>
-        </div>
-
-        <section class="new-products">
-            <div class="inner">
-                <h2>신제품 몰아보기!</h2>
-                <div class="product-grid">
-                    <div class="product-item">
-                        <img src="./img/product1.jpg" alt="식물원" />
-                        <div class="product-card">
-                            <dl>
-                                <dt>식물원</dt>
-                                <dd>429,900 원</dd>
-                            </dl>
-                            <button class="wishlist-btn" aria-label="찜하기"></button>
+            <section class="new-products">
+                <div class="inner">
+                    <h2>신제품 몰아보기!</h2>
+                    <div class="product-grid">
+                        <div class="product-item">
+                            <img src="./img/product1.jpg" alt="식물원" />
+                            <div class="product-card">
+                                <dl>
+                                    <dt>식물원</dt>
+                                    <dd>429,900 원</dd>
+                                </dl>
+                                <button class="wishlist-btn" aria-label="찜하기"></button>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="./img/product2.jpg" alt="엑스맵: 엑스 멘션" />
+                            <div class="product-card">
+                                <dl>
+                                    <dt>엑스맵: 엑스 멘션</dt>
+                                    <dd>429,900 원</dd>
+                                </dl>
+                                <button class="wishlist-btn" aria-label="찜하기"></button>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="./img/product3.jpg" alt="자바의 함선" />
+                            <div class="product-card">
+                                <dl>
+                                    <dt>자바의 함선</dt>
+                                    <dd>649,900 원</dd>
+                                </dl>
+                                <button class="wishlist-btn" aria-label="찜하기"></button>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="./img/product4.jpg" alt="산타의 우체국" />
+                            <div class="product-card">
+                                <dl>
+                                    <dt>산타의 우체국</dt>
+                                    <dd>149,900 원</dd>
+                                </dl>
+                                <button class="wishlist-btn" aria-label="찜하기"></button>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="./img/product5.jpg" alt="산타의 배달 트럭" />
+                            <div class="product-card">
+                                <dl>
+                                    <dt>산타의 배달 트럭</dt>
+                                    <dd>28,200 원</dd>
+                                </dl>
+                                <button class="wishlist-btn" aria-label="찜하기"></button>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="./img/product6.jpg" alt="디즈니 매직" />
+                            <div class="product-card">
+                                <dl>
+                                    <dt>디즈니 매직</dt>
+                                    <dd>149,900 원</dd>
+                                </dl>
+                                <button class="wishlist-btn" aria-label="찜하기"></button>
+                            </div>
                         </div>
                     </div>
-                    <div class="product-item">
-                        <img src="./img/product2.jpg" alt="엑스맵: 엑스 멘션" />
-                        <div class="product-card">
-                            <dl>
-                                <dt>엑스맵: 엑스 멘션</dt>
-                                <dd>429,900 원</dd>
-                            </dl>
-                            <button class="wishlist-btn" aria-label="찜하기"></button>
+                </div>
+            </section>
+            <section class="new">
+                <div class="new-slider-wrap">
+                    <div class="swiper new-slider">
+                        <div class="swiper-wrapper">
+                            <!-- 각 슬라이드는 .swiper-slide 클래스를 가져야 합니다 -->
+                            <div class="swiper-slide new-card">
+                                <img src="./img/new-pic3.jpg" alt="" />
+                            </div>
+                            <div class="swiper-slide new-card">
+                                <img src="./img/new-pic1.jpg" alt="" />
+                            </div>
+                            <div class="swiper-slide new-card">
+                                <img src="./img/new-pic2.jpg" alt="" />
+                            </div>
+                            <!-- 필요 시 더 추가 -->
                         </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
-                    <div class="product-item">
-                        <img src="./img/product3.jpg" alt="자바의 함선" />
-                        <div class="product-card">
+                </div>
+                <div class="asset-grid">
+                    <div class="asset-item">
+                        <img src="./img/new-asset1.png" alt="웬즈데이와 이니드" />
+                        <div class="asset-card">
                             <dl>
-                                <dt>자바의 함선</dt>
-                                <dd>649,900 원</dd>
-                            </dl>
-                            <button class="wishlist-btn" aria-label="찜하기"></button>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <img src="./img/product4.jpg" alt="산타의 우체국" />
-                        <div class="product-card">
-                            <dl>
-                                <dt>산타의 우체국</dt>
-                                <dd>149,900 원</dd>
-                            </dl>
-                            <button class="wishlist-btn" aria-label="찜하기"></button>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <img src="./img/product5.jpg" alt="산타의 배달 트럭" />
-                        <div class="product-card">
-                            <dl>
-                                <dt>산타의 배달 트럭</dt>
+                                <p>Wednesday</p>
+                                <dt>웬즈데이와 이니드</dt>
                                 <dd>28,200 원</dd>
                             </dl>
-                            <button class="wishlist-btn" aria-label="찜하기"></button>
+                            <button class="new-wish" aria-label="찜하기"></button>
                         </div>
                     </div>
-                    <div class="product-item">
-                        <img src="./img/product6.jpg" alt="디즈니 매직" />
-                        <div class="product-card">
+                    <div class="asset-item">
+                        <img src="./img/new-asset2.png" alt="슬픔, 기쁨, 불안" />
+                        <div class="asset-card">
                             <dl>
-                                <dt>디즈니 매직</dt>
-                                <dd>149,900 원</dd>
+                                <p>Disney</p>
+                                <dt>슬픔, 기쁨, 불안</dt>
+                                <dd>28,200 원</dd>
                             </dl>
-                            <button class="wishlist-btn" aria-label="찜하기"></button>
+                            <button class="new-wish" aria-label="찜하기"></button>
+                        </div>
+                    </div>
+                    <div class="asset-item">
+                        <img src="./img/new-asset3.png" alt="이브와 웰.E" />
+                        <div class="asset-card">
+                            <dl>
+                                <p>Disney</p>
+                                <dt>이브와 웰.E</dt>
+                                <dd>20,500 원</dd>
+                            </dl>
+                            <button class="new-wish" aria-label="찜하기"></button>
+                        </div>
+                    </div>
+                    <div class="asset-item">
+                        <img src="./img/new-asset4.png" alt="러셀, 칼, 케빈" />
+                        <div class="asset-card">
+                            <dl>
+                                <p>Disney</p>
+                                <dt>러셀, 칼, 케빈</dt>
+                                <dd>28,200 원</dd>
+                            </dl>
+                            <button class="new-wish" aria-label="찜하기"></button>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="swiper-container">
-            <div class="swiper new-slider">
-                <!-- Slides -->
-                <div class="swiper-slide new-card"><img src="./img/new-pic3.jpg" alt="" /></div>
-                <div class="swiper-slide new-card"><img src="./img/new-pic1.jpg" alt="" /></div>
-                <div class="swiper-slide new-card"><img src="./img/new-pic2.jpg" alt="" /></div>
-                <!-- Add more slides as needed -->
-            </div>
-
-            <div class="asset-grid">
-                <div class="asset-item">
-                    <img src="./img/new-asset1.png" alt="웬즈데이와 이니드" />
-                    <div class="asset-card">
-                        <dl>
-                            <p>Wednesday</p>
-                            <dt>웬즈데이와 이니드</dt>
-                            <dd>28,200 원</dd>
-                        </dl>
-                        <button class="new-wish" aria-label="찜하기"></button>
+            </section>
+            <section class="journey">
+                <div class="inner">
+                    <h2>새로운 발견</h2>
+                    <div class="journey-content">
+                        <div class="journey-item">
+                            <h3>스타워즈 크리스마스 에디션 사전 예약 시작!</h3>
+                            <p>즐거운 연말을 맞아 당신의 집에 특별한 스타워즈의 매력을 더해보세요!</p>
+                            <div class="journey-con">
+                                <a href="#" class="journey-link"><img src="./img/arrow-right.svg" alt="" /></a>
+                                <img src="./img/journey-pic1.jpg" alt="스타워즈 크리스마스" />
+                            </div>
+                        </div>
+                        <div class="journey-item">
+                            <h3>레고 무한 가능성 블록 세트: 현대 미술과 만나다!</h3>
+                            <p>무한한 가능성을 지닌 레고와 함께 예술의 세계로 떠나보세요!</p>
+                            <div class="journey-con">
+                                <a href="#" class="journey-link"><img src="./img/arrow-right.svg" alt="" /></a>
+                                <img src="./img/journey-pic2.jpg" alt="레고 아트" />
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="asset-item">
-                    <img src="./img/new-asset2.png" alt="슬픔, 기쁨, 불안" />
-                    <div class="asset-card">
-                        <dl>
-                            <p>Disney</p>
-                            <dt>슬픔, 기쁨, 불안</dt>
-                            <dd>28,200 원</dd>
-                        </dl>
-                        <button class="new-wish" aria-label="찜하기"></button>
-                    </div>
-                </div>
-                <div class="asset-item">
-                    <img src="./img/new-asset3.png" alt="이브와 웰.E" />
-                    <div class="asset-card">
-                        <dl>
-                            <p>Disney</p>
-                            <dt>이브와 웰.E</dt>
-                            <dd>20,500 원</dd>
-                        </dl>
-                        <button class="new-wish" aria-label="찜하기"></button>
-                    </div>
-                </div>
-                <div class="asset-item">
-                    <img src="./img/new-asset4.png" alt="러셀, 칼, 케빈" />
-                    <div class="asset-card">
-                        <dl>
-                            <p>Disney</p>
-                            <dt>러셀, 칼, 케빈</dt>
-                            <dd>28,200 원</dd>
-                        </dl>
-                        <button class="new-wish" aria-label="찜하기"></button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </section>
-
-        <section class="journey">
-            <div class="inner">
-                <h2>새로운 발견</h2>
-                <div class="journey-content">
-                    <div class="journey-item">
-                        <h3>스타워즈 크리스마스 에디션 사전 예약 시작!</h3>
-                        <p>즐거운 연말을 맞아 당신의 집에 특별한 스타워즈의 매력을 더해보세요!</p>
-                        <img src="./img/star_wars_christmas.jpg" alt="스타워즈 크리스마스" />
-                    </div>
-                    <div class="journey-item">
-                        <h3>레고 무한 가능성 블록 세트: 현대 미술과 만나다!</h3>
-                        <p>무한한 가능성을 지닌 레고와 함께 예술의 세계로 떠나보세요!</p>
-                        <img src="./img/lego_art.jpg" alt="레고 아트" />
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
+        </main>
 
         <footer>
             <div class="inner">

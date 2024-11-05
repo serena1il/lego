@@ -89,6 +89,39 @@ nav {
     opacity: 0.7; /* 호버 시 투명도 조정 */
 }
 
+/* 검색 폼 스타일 */
+.search-form {
+    display: flex; /* 수평 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    margin: 0; /* 기본 마진 제거 */
+    font-size: 1.8rem;
+}
+
+.search-form input[type="search"] {
+    padding: 5px; /* 내부 여백 */
+    border: 1px solid #ccc; /* 테두리 색상 */
+    border-radius: 5rem; /* 모서리 둥글게 */
+    width: 200px; /* 너비 설정 */
+    transition: border-color 0.4s; /* 테두리 색상 변화 애니메이션 */
+}
+
+.search-form input[type="search"]:focus {
+    border-color: var(--main-color); /* 포커스 시 테두리 색상 변경 */
+    outline: none; /* 기본 포커스 아웃라인 제거 */
+}
+
+.search-button {
+    border: none; /* 테두리 제거 */
+    border-radius: 3rem; /* 모서리 둥글게 */
+    color: white; /* 글자 색상 */
+    cursor: pointer; /* 커서 포인터로 변경 */
+    margin-left: 5px; /* 입력 필드와 버튼 사이 여백 */
+    transition: background-color 0.3s; /* 배경색 변화 애니메이션 */
+}
+
+.search-button:hover {
+    background-color: #ff0000; /* 호버 시 배경색 변경 */
+}
 /*  */
 
 .title {
@@ -184,6 +217,12 @@ nav {
     background-color: transparent;
     cursor: pointer;
     padding: 0;
+    transition: transform 0.3s ease;
+    transform: scale(1);
+}
+
+.wishlist-btn:hover {
+    transform: scale(1.1);
 }
 
 .wishlist-btn.filled {
@@ -235,6 +274,7 @@ nav {
 
 /*  */
 
+/*  */
 footer {
     display: flex;
     background: var(--main-color);
@@ -257,7 +297,7 @@ footer a {
 .footer-logo {
     width: 6.2rem;
     height: 6.2rem;
-    margin-top: 13.2rem;
+    margin-top: 7rem;
 }
 
 .footer-logo a {
@@ -279,7 +319,8 @@ footer a:hover {
 .social-links {
     display: flex;
     flex-direction: row;
-    margin-top: 8rem;
+    margin-top: 5rem;
+    height: 6rem;
 }
 
 .social-links p {
@@ -320,11 +361,9 @@ footer .social-icons a {
     margin-bottom: 8rem;
 }
 
-/*  */
-
 footer .back-to-top {
     position: fixed;
-    right: 5px;
+    right: 20px;
     bottom: 20px;
     background-color: #fff;
     margin-right: 22rem;
@@ -359,14 +398,6 @@ footer .back-to-top::before {
 }
 
 footer .back-to-top:hover {
-    background-color: #e0e0e0;
-}
-
-.more {
-    display: none;
-}
-
-.more:hover {
     background-color: #e0e0e0;
 }
 

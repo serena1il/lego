@@ -111,8 +111,8 @@ body {
     line-height: 1;
 }
 ol,
-ul,
-li {
+li,
+ul {
     list-style: none;
 }
 blockquote,
