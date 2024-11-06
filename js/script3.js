@@ -30,32 +30,22 @@ $(function () {
         });
     });
 
-    // //
-    document.addEventListener("DOMContentLoaded", function () {
-        // Swiper 인스턴스 생성
-        const newSlider = new Swiper(".new-slider", {
-            direction: "horizontal",
-            loop: true,
-            autoplay: {
-                delay: 1000,
-                disableOnInteraction: false,
-            },
-            speed: 1000,
-            effect: "slide",
-            slidesPerView: 1,
-            spaceBetween: 50,
-
-            // Pagination
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            // Navigation buttons
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-        // newSlider 변수를 활용할 수 있는 추가 코드가 필요할 수 있습니다.
+    var swiper = new Swiper(".newSwiper", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        direction: "horizontal",
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        speed: 1000,
+        effect: "slide",
+        slidesPerView: 1,
+        spaceBetween: 50,
     });
+
+    // //
 });
