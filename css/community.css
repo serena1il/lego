@@ -209,4 +209,295 @@
     opacity: 50%;
 }
 
-/*  */
+/* ''''''' */
+
+.community h2 {
+    font-weight: 700;
+    font-size: 4.2rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.community-con figure img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    border-radius: 2rem;
+    margin-top: 3rem;
+}
+
+.community-con figure img:hover {
+    border-radius: 5rem;
+}
+
+.community-con p {
+    font-size: 2.4rem;
+    text-align: center;
+    width: 120rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+/* ''''''' */
+
+.community-card {
+    display: flex;
+    gap: 2rem;
+    margin-top: 15rem;
+}
+
+.community-item img {
+    width: 42.7rem;
+    height: 27.8rem;
+    transition: 0.4s ease;
+    filter: brightness(70%);
+}
+
+.community-item:hover img {
+    filter: brightness(100%);
+}
+
+.community-item dl {
+    margin-top: 2rem;
+    width: 42.7rem;
+    text-align: center;
+}
+.community-item dl dt {
+    font-weight: 600;
+    font-size: 3.2rem;
+}
+.community-item dl dd {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-top: 1rem;
+}
+
+/* ''''''' */
+.idea h2 {
+    font-weight: 700;
+    font-size: 4.2rem;
+    text-align: center;
+    margin-top: 15rem;
+}
+
+.swiper-wrapper {
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.swiper-slide img {
+    width: 42.7rem;
+    height: 42.7rem;
+    border-radius: 2rem;
+    border: 1px solid #f0f0f0;
+}
+
+/* .swiper-pagination {
+    text-align: left;
+    padding: 0 0 0 2rem;
+}
+
+.swiper-pagination-bullet {
+    background-color: #ccc; 
+    opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--main-color); 
+    width: 1.5rem;
+    border-radius: 30rem;
+} */
+
+/* ''''''' */
+
+.update {
+    background: #fafafa;
+    padding-bottom: 15rem;
+}
+
+.update-news {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; /* 카드 간격 */
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.update-con {
+    display: flex;
+    flex-direction: column; /* 카드 내 요소들을 세로 배치 */
+}
+
+.update h2 {
+    font-weight: 700;
+    font-size: 4.2rem;
+    margin-top: 15rem;
+    padding-top: 17rem;
+    text-align: center;
+}
+
+.update-card img {
+    width: 31.5rem;
+    height: 17.6rem;
+}
+
+.update-list {
+    padding: 2rem;
+    background: #fff;
+    width: 31.5rem;
+    border-radius: 0 0 2rem 2rem;
+    transition: background-color 0.4s ease;
+}
+
+.update-con:hover .update-list {
+    background-color: var(--main-color); /* 호버 시 메인 색상으로 배경 변경 */
+    color: #fff; /* 텍스트 색상도 변경 (필요시) */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+}
+
+.update-list strong {
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #888;
+}
+
+.update-list h3 {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.update-list p {
+    font-size: 1.6rem;
+    color: #777;
+    margin-top: 3rem;
+}
+
+.update-con:hover .update-list strong,
+.update-con:hover .update-list p {
+    color: #fff;
+}
+
+/* ''''''' */
+
+footer {
+    display: flex;
+    background: var(--main-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 3rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.footer-logo {
+    width: 6.2rem;
+    height: 6.2rem;
+    margin-top: 13.2rem;
+}
+
+.footer-logo a {
+    width: 6.2rem;
+    height: 6.2rem;
+}
+
+footer .footer-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+footer a:hover {
+    /* text-decoration: underline; */
+    color: var(--sub-color1);
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8rem;
+}
+
+.social-links p {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 1.2rem;
+    margin-bottom: 8rem;
+}
+
+.social-icons img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    width: 3rem;
+    height: 3rem;
+    margin-left: 5px;
+}
+
+footer .social-icons a {
+    margin: 0 1rem;
+    font-size: 20px;
+}
+.legal-info p {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    line-height: 1.6;
+}
+
+.legal-info .legal-info-text {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    line-height: 1.6;
+    margin-top: 2.5rem;
+    margin-bottom: 8rem;
+}
+
+footer .back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #fff;
+    margin-right: 22rem;
+    color: var(--main-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer .back-to-top img {
+    display: block;
+    width: 25px;
+    height: 15px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer .back-to-top::before {
+    content: "";
+    font-size: 20px;
+}
+
+footer .back-to-top:hover {
+    background-color: #e0e0e0;
+}

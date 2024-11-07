@@ -18,4 +18,24 @@ $(function () {
     backToTop.addEventListener("click", function () {
         $("html, body").animate({ scrollTop: 0 }, 600); // 600밀리초 동안 부드럽게 스크롤
     });
+
+    // '''' //
+    var swiper = new Swiper(".ideaSwiper", {
+        slidesPerView: 4.5,
+        centeredSlides: true,
+        spaceBetween: 30,
+        spaceBetween: 20,
+        direction: "horizontal",
+        loop: true,
+        autoplay: {
+            delay: 1000,
+            disableOnInteraction: false,
+        },
+        speed: 2000,
+        effect: "slide",
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
 });
