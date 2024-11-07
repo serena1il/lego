@@ -171,7 +171,7 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    background: rgba(0, 0, 0, 0.4);
+    background: var(--sub-color1);
     width: 100%;
     height: 6rem;
     padding-left: 30rem;
@@ -245,10 +245,15 @@
 .product-item dl dt {
     font-weight: 700;
     font-size: 3rem;
+    transition: 0.3s ease;
 }
 .product-item dl dd {
     font-weight: 600;
     font-size: 2.5rem;
+}
+
+.product-item:hover .product-card dl dt {
+    color: var(--main-color); /* 호버 시 색상 변경 */
 }
 
 .wishlist-btn {
@@ -367,6 +372,14 @@
     margin-top: 1rem;
     font-weight: 600;
     font-size: 2.5rem;
+}
+
+.asset-item .asset-card dt {
+    transition: color 0.3s ease; /* 컬러 변경에 부드러운 전환 효과 추가 */
+}
+
+.asset-item:hover .asset-card dt {
+    color: var(--main-color); /* 호버 시 dt 요소의 텍스트 색상을 메인 컬러로 변경 */
 }
 
 .new-wish {

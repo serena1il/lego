@@ -54,4 +54,27 @@ $(function () {
             this.classList.toggle("filled"); // 클릭 시 filled 클래스 토글
         });
     });
+
+    document.querySelectorAll(".wishlist-btn").forEach(function (button) {
+        button.addEventListener("click", function (event) {
+            event.stopPropagation(); // 이벤트 전파 막기
+            event.preventDefault(); // 기본 링크 동작 방지
+            // 찜하기 기능을 여기에 추가
+        });
+    });
+
+    // //
+    // Get all category items
+    const categoryItems = document.querySelectorAll(".category-item");
+
+    // Add click event listener to each category item
+    categoryItems.forEach((item) => {
+        item.addEventListener("click", function () {
+            // Remove the 'active' class from all items
+            categoryItems.forEach((item) => item.classList.remove("active"));
+
+            // Add the 'active' class to the clicked item
+            this.classList.add("active");
+        });
+    });
 });

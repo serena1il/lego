@@ -470,10 +470,16 @@
     height: 43.5rem;
 }
 
+/* .slider-item img:hover {
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 7px;
+} */
+
 .slider-item img {
     width: 31.5rem;
     height: 32.5rem;
     border-radius: 2rem;
+    transition: 0.4s;
 }
 
 .slider-item dt {
@@ -489,6 +495,15 @@
     font-weight: 600;
     color: var(--text-color);
     text-align: left;
+}
+
+.slider-item dl dt {
+    transition: color 0.3s ease; /* 색상 변화에 대한 부드러운 전환 효과 */
+}
+
+/* a 태그 호버 시 dl 요소의 텍스트 색상 변경 */
+.slider-item:hover dl dt {
+    color: var(--main-color); /* 메인 컬러로 설정 */
 }
 
 .wishlist-btn {
@@ -611,6 +626,10 @@
     margin-top: 2rem;
 }
 
+.sale-item:hover {
+    color: var(--main-color);
+}
+
 .sale-info-content p {
     font-size: 2.2rem;
     font-weight: 600;
@@ -680,12 +699,20 @@
     border-radius: 5rem;
     padding: 1rem 1.5rem;
     margin-top: 1.5rem;
-    transition: background-color 0.4s ease;
+    transition: 0.3s ease;
+}
+
+.tab-button.active {
+    color: #fff;
+    background-color: var(--main-color);
+}
+.tab-button.active:hover {
+    color: #fff;
+    background-color: var(--main-color);
 }
 
 .tab-button:hover {
-    color: #fff;
-    background-color: var(--main-color);
+    color: var(--main-color);
 }
 
 .theme-slider {
@@ -727,11 +754,19 @@
     font-size: 2.8rem;
     font-weight: 700;
     margin-top: 2rem;
+    transition: color 0.3s ease;
 }
 
 .theme-card dd {
     font-size: 2.2rem;
     font-weight: 600;
+}
+
+.theme-info:hover .theme-card dt {
+    color: var(--main-color);
+}
+.theme-info:hover .theme-card dd {
+    color: var(--text-color);
 }
 
 .wish-btn {

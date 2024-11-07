@@ -19,7 +19,7 @@ $(function () {
         $("html, body").animate({ scrollTop: 0 }, 600); // 600밀리초 동안 부드럽게 스크롤
     });
 
-    // //
+    //  //
 
     document.querySelectorAll(".wishlist-btn").forEach((button) => {
         button.addEventListener("click", function () {
@@ -33,6 +33,20 @@ $(function () {
         });
     });
 
+    document.querySelectorAll(".wishlist-btn").forEach(function (button) {
+        button.addEventListener("click", function (event) {
+            event.stopPropagation(); // 이벤트 전파 막기
+            event.preventDefault(); // 기본 링크 동작 방지
+            // 찜하기 기능을 여기에 추가
+        });
+    });
+    document.querySelectorAll(".wish-btn").forEach(function (button) {
+        button.addEventListener("click", function (event) {
+            event.stopPropagation(); // 이벤트 전파 막기
+            event.preventDefault(); // 기본 링크 동작 방지
+            // 찜하기 기능을 여기에 추가
+        });
+    });
     // //
 
     const topSlider = new Swiper(".top-slider", {
@@ -74,5 +88,21 @@ $(function () {
             delay: 3000, // 자동 재생 지연 시간 (밀리초)
             disableOnInteraction: false, // 사용자 상호작용 후에도 자동 재생 유지
         },
+    });
+
+    // //
+
+    // 모든 버튼 요소를 선택
+    const tabButtons = document.querySelectorAll(".tab-button");
+
+    // 각 버튼에 클릭 이벤트 리스너 추가
+    tabButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            // 모든 버튼에서 active 클래스 제거
+            tabButtons.forEach((btn) => btn.classList.remove("active"));
+
+            // 클릭된 버튼에 active 클래스 추가
+            button.classList.add("active");
+        });
     });
 });

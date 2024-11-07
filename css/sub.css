@@ -150,6 +150,11 @@ nav {
     color: #000;
 }
 
+.category-item.active {
+    /* background-color: #ffd700;  */
+    font-weight: bold;
+}
+
 .swiper-button-prev,
 .swiper-button-next {
     display: none;
@@ -263,6 +268,16 @@ nav {
 .theme-card dd {
     font-size: 2.2rem;
     font-weight: 600;
+}
+
+/* <a> 호버 시 <dl> 안의 텍스트 색상 변경 */
+a:hover .theme-card dt {
+    color: var(--main-color); /* 메인 색상 적용 */
+}
+
+/* 선택사항: 색상 변경을 부드럽게 전환하기 위한 애니메이션 추가 */
+.theme-card dt {
+    transition: color 0.3s ease; /* 부드러운 색상 전환 */
 }
 
 .theme-item {

@@ -29,4 +29,19 @@ $(function () {
             this.classList.toggle("filled"); // 클릭 시 filled 클래스 토글
         });
     });
+
+    document.querySelectorAll(".wishlist-btn").forEach(function (button) {
+        button.addEventListener("click", function (event) {
+            event.stopPropagation(); // 이벤트 전파 막기
+            event.preventDefault(); // 기본 링크 동작 방지
+            // 찜하기 기능을 여기에 추가
+        });
+    });
+    document.querySelectorAll(".wish-btn").forEach(function (button) {
+        button.addEventListener("click", function (event) {
+            event.stopPropagation(); // 이벤트 전파 막기
+            event.preventDefault(); // 기본 링크 동작 방지
+            // 찜하기 기능을 여기에 추가
+        });
+    });
 });

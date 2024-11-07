@@ -4,7 +4,7 @@
 :root {
     --main-color: #e3000b;
     --sub-color: #000;
-    --sub-color1: #ffd500;
+    --sub-color1: #ffd502;
     --text-color: #333;
 
     font-size: 62.5%;
@@ -41,7 +41,6 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: #fff;
 }
 
 img {
