@@ -216,6 +216,7 @@
     font-size: 4.2rem;
     text-align: center;
     margin-top: 5rem;
+    color: var(--main-color);
 }
 
 .community-con figure img {
@@ -231,12 +232,18 @@
     border-radius: 5rem;
 }
 
+.community h3 {
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 3rem;
+}
 .community-con p {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     text-align: center;
     width: 120rem;
     margin: 0 auto;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
 }
 /* ''''''' */
 
@@ -267,7 +274,7 @@
     font-size: 3.2rem;
 }
 .community-item dl dd {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: var(--text-color);
     margin-top: 1rem;
 }
