@@ -12,6 +12,7 @@
     width: 100%;
     justify-content: center;
     margin-top: 1rem;
+    position: relative;
 }
 
 .logo {
@@ -108,7 +109,6 @@
     justify-content: center;
     text-align: center;
     color: #ffffff;
-    position: relative;
     overflow: hidden; /* 자식 요소가 비주얼 영역을 벗어날 경우 숨김 */
     flex-direction: column; /* 세로 배치로 변경 */
     transform: translateY(-70px);
@@ -209,11 +209,15 @@
     opacity: 50%;
 }
 
+main {
+    background: #fafafa;
+}
+
 /*  */
 .events {
-    background: #fafafa;
     padding-top: 15rem;
     padding-bottom: 15rem;
+    transform: translateY(-70px);
 }
 
 .events h2 {
