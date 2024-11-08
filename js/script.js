@@ -105,4 +105,26 @@ $(function () {
             button.classList.add("active");
         });
     });
+
+    // ''''''''//
+    const tabs = document.querySelectorAll(".tab-button");
+    const sliders = document.querySelectorAll(".theme-slider");
+
+    tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+            // 모든 탭에서 active 클래스 제거
+            tabs.forEach((t) => t.classList.remove("active"));
+            tab.classList.add("active");
+
+            // 모든 슬라이더 숨김 처리
+            sliders.forEach((slider) => {
+                slider.style.display = "none";
+            });
+
+            // 클릭된 탭의 테마에 맞는 슬라이더 표시
+            const theme = tab.getAttribute("data-theme");
+            const activeSlider = document.querySelector(`.theme-slider[data-theme="${theme}"]`);
+            activeSlider.style.display = "flex"; // 원하는 CSS 적용
+        });
+    });
 });

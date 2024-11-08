@@ -303,7 +303,8 @@
             <section class="Theme">
                 <div class="inner">
                     <h2>Theme</h2>
-                    <!-- 테마별 제품 카드들 -->
+
+                    <!-- 테마별 탭 버튼 -->
                     <ul class="theme-tabs">
                         <li><button class="tab-button active" data-theme="아키텍처">아키텍처</button></li>
                         <li><button class="tab-button" data-theme="클래식">클래식</button></li>
@@ -312,8 +313,10 @@
                         <li><button class="tab-button" data-theme="해리포터">해리포터</button></li>
                     </ul>
 
+                    <!-- 테마별 제품 리스트 -->
                     <div class="product-carousel">
-                        <div class="theme-slider">
+                        <!-- 아키텍처 테마 -->
+                        <div class="theme-slider" data-theme="아키텍처">
                             <a href="#" class="theme-info">
                                 <img src="./img/architecture-img1.jpg" alt="파리 노트르담" />
                                 <div class="theme-item">
@@ -325,7 +328,7 @@
                                 </div>
                             </a>
                             <a href="#" class="theme-info">
-                                <img src="./img/architecture-img2.jpg" alt="기자의 피라미드" />
+                                <img src="./img/architecture-img2.jpg" alt="" />
                                 <div class="theme-item">
                                     <dl class="theme-card">
                                         <dt>기자의 피라미드</dt>
@@ -335,7 +338,7 @@
                                 </div>
                             </a>
                             <a href="#" class="theme-info">
-                                <img src="./img/architecture-img3.jpg" alt="자유의 여신상" />
+                                <img src="./img/architecture-img3.jpg" alt="" />
                                 <div class="theme-item">
                                     <dl class="theme-card">
                                         <dt>자유의 여신상</dt>
@@ -345,7 +348,7 @@
                                 </div>
                             </a>
                             <a href="#" class="theme-info">
-                                <img src="./img/architecture-img4.jpg" alt="런던" />
+                                <img src="./img/architecture-img4.jpg" alt="" />
                                 <div class="theme-item">
                                     <dl class="theme-card">
                                         <dt>히메 성</dt>
@@ -355,7 +358,7 @@
                                 </div>
                             </a>
                             <a href="#" class="theme-info">
-                                <img src="./img/architecture-img5.jpg" alt="에펠탑" />
+                                <img src="./img/architecture-img5.jpg" alt="" />
                                 <div class="theme-item">
                                     <dl class="theme-card">
                                         <dt>에펠탑</dt>
@@ -365,7 +368,7 @@
                                 </div>
                             </a>
                             <a href="#" class="theme-info">
-                                <img src="./img/architecture-img6.jpg" alt="우주 발사 시스템" />
+                                <img src="./img/architecture-img6.jpg" alt="" />
                                 <div class="theme-item">
                                     <dl class="theme-card">
                                         <dt>우주 발사 시스템</dt>
@@ -375,7 +378,7 @@
                                 </div>
                             </a>
                             <a href="#" class="theme-info">
-                                <img src="./img/architecture-img7.jpg" alt="싱가포르" />
+                                <img src="./img/architecture-img7.jpg" alt="" />
                                 <div class="theme-item">
                                     <dl class="theme-card">
                                         <dt>싱가포르</dt>
@@ -385,7 +388,7 @@
                                 </div>
                             </a>
                             <a href="#" class="theme-info">
-                                <img src="./img/architecture-img8.jpg" alt="미국 뉴욕 록펠러 센터" />
+                                <img src="./img/architecture-img8.jpg" alt="" />
                                 <div class="theme-item">
                                     <dl class="theme-card">
                                         <dt>미국 뉴욕 록펠러 센터</dt>
@@ -395,11 +398,188 @@
                                 </div>
                             </a>
 
-                            <!-- 추가 제품들 -->
+                            <!-- 추가 아키텍처 제품들 -->
                         </div>
-                        <!-- <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div> -->
+
+                        <!-- 클래식 테마 -->
+                        <div class="theme-slider" data-theme="클래식" style="display: none">
+                            <!-- 클래식 테마 상품들 -->
+                            <a href="#" class="theme-info">
+                                <img src="./img/classic1.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>파스텔톤 조립 놀이</dt>
+                                        <dd>29,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/classic2.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>창의력 자동차</dt>
+                                        <dd>79,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/classic3.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>창의력 우주 행성</dt>
+                                        <dd>44,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/classic4.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>판타지 세계</dt>
+                                        <dd>129,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/classic5.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>브릭 한 꾸러미</dt>
+                                        <dd>89,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/classic6.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>창의력 하우스</dt>
+                                        <dd>79,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/classic7.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>창의력 색상 놀이</dt>
+                                        <dd>102,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/classic8.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>파티 박스</dt>
+                                        <dd>72,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 마인크래프트 테마 -->
+                        <div class="theme-slider" data-theme="마인크래프트" style="display: none">
+                            <!-- 마인크래프트 테마 상품들 -->
+                            <a href="#" class="theme-info">
+                                <img src="./img/main1.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>거북이 해변의 집</dt>
+                                        <dd>39,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/main2.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>얼어붙은 산꼭대기</dt>
+                                        <dd>49,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/main3.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>아기 돼지의 생일파티</dt>
+                                        <dd>29,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/main4.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>깊고 어두운 전장</dt>
+                                        <dd>94,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/main5.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>황무의 폐광</dt>
+                                        <dd>89,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/main6.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>검의 전초기지</dt>
+                                        <dd>64,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/main7.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>해적선 항해</dt>
+                                        <dd>19,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                            <a href="#" class="theme-info">
+                                <img src="./img/main8.jpg" alt="" />
+                                <div class="theme-item">
+                                    <dl class="theme-card">
+                                        <dt>아이언 골렘 요새</dt>
+                                        <dd>157,900 원</dd>
+                                    </dl>
+                                    <button class="wish-btn" aria-label="찜하기"></button>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- 마블 테마 -->
+                        <div class="theme-slider" data-theme="마블" style="display: none">
+                            <!-- 마블 테마 상품들 -->
+                        </div>
+
+                        <!-- 해리포터 테마 -->
+                        <div class="theme-slider" data-theme="해리포터" style="display: none">
+                            <!-- 해리포터 테마 상품들 -->
+                        </div>
                     </div>
                 </div>
             </section>
