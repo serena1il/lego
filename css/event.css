@@ -98,7 +98,8 @@
     display: none;
 }
 
-/*  */
+/* ''''''''''''' */
+
 .visual {
     background-image: url("../img/event-visual.png");
     background-size: 100%;
@@ -165,7 +166,8 @@
     width: 3.3rem;
     height: 3.3rem;
 }
-/*  */
+
+/* '''''''''' */
 
 .location {
     display: flex;
@@ -213,7 +215,8 @@ main {
     background: #fafafa;
 }
 
-/*  */
+/* ''''''''''''' */
+
 .events {
     padding-top: 15rem;
     padding-bottom: 15rem;
@@ -223,6 +226,7 @@ main {
 .events h2 {
     font-weight: 700;
     font-size: 4.2rem;
+    color: var(--title-color);
 }
 
 .event-cards {

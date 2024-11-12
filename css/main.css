@@ -277,7 +277,7 @@
     display: inline;
 }
 
-/*  */
+/* 신제품 */
 
 .product-cards {
     display: flex;
@@ -291,6 +291,7 @@
     font-size: 3.6rem;
     font-weight: 700;
     margin: 3rem 0 3rem 0;
+    color: var(--title-color);
 }
 
 .product-card {
@@ -377,7 +378,7 @@
     color: #fff;
 }
 
-/*  */
+/* 베스트 */
 
 .best {
     display: flex;
@@ -440,19 +441,22 @@
     font-weight: 700;
     color: var(--text-color);
     text-align: left;
+    z-index: 2;
 }
 
 .best-header h2 {
     font-size: 6rem;
     font-weight: 700;
-    color: #000;
+    color: var(--main-color);
     text-align: left;
+    z-index: 2;
 }
 
 .best-header p {
     font-size: 2rem;
     color: var(--text-color);
     text-align: left;
+    z-index: 2;
 }
 
 .slider-container {
@@ -469,11 +473,6 @@
     width: 31.7rem;
     height: 43.5rem;
 }
-
-/* .slider-item img:hover {
-    border-radius: 2rem;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 7px;
-} */
 
 .slider-item img {
     width: 31.5rem;
@@ -498,12 +497,11 @@
 }
 
 .slider-item dl dt {
-    transition: color 0.3s ease; /* 색상 변화에 대한 부드러운 전환 효과 */
+    transition: color 0.3s ease;
 }
 
-/* a 태그 호버 시 dl 요소의 텍스트 색상 변경 */
 .slider-item:hover dl dt {
-    color: var(--main-color); /* 메인 컬러로 설정 */
+    color: var(--main-color);
 }
 
 .wishlist-btn {
@@ -523,7 +521,7 @@
 }
 
 .wishlist-btn.filled {
-    background: url(../img/wishlist-fill.svg); /* 채워진 하트 이미지 */
+    background: url(../img/wishlist-fill.svg);
 }
 
 .slider-info {
@@ -533,7 +531,7 @@
     align-items: center;
 }
 
-/*  */
+/* 이벤트 */
 
 .event {
     background: #f7f7f7;
@@ -543,6 +541,7 @@
     font-size: 3.6rem;
     font-weight: 700;
     padding-top: 19rem;
+    color: var(--title-color);
 }
 
 .event p {
@@ -562,8 +561,6 @@
     width: 132rem;
     height: 21.6rem;
 }
-
-/* Custom navigation buttons using background images */
 
 .swiper-button-prev,
 .swiper-button-next {
@@ -590,7 +587,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/*  */
+/* 세일 */
 .sale {
     padding: 19rem 0;
     background: #f7f7f7;
@@ -599,6 +596,7 @@
 .sale-header h3 {
     font-size: 3.6rem;
     font-weight: 700;
+    color: var(--title-color);
 }
 .sale-header p {
     font-size: 2.4rem;
@@ -610,9 +608,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
     gap: 2rem;
-
     margin-top: 4rem;
 }
 
@@ -670,12 +666,13 @@
     align-items: center;
 }
 
-/*  */
+/* 테마 */
 
 .Theme h2 {
     font-size: 3.6rem;
     font-weight: 700;
     margin-top: 19rem;
+    color: var(--title-color);
 }
 
 .theme-tabs {
@@ -692,9 +689,7 @@
     color: var(--text-color);
     justify-content: center;
     align-items: center;
-    /* margin: 2rem; */
     margin-right: 4rem;
-    color: var(--text-color);
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -794,7 +789,7 @@
 
 /*  */
 
-/*  */
+/* 푸터 */
 footer {
     display: flex;
     background: var(--main-color);
@@ -949,8 +944,7 @@ footer .back-to-top:hover {
     }
 
     .gnb li {
-        margin: 0 3.5rem; /* 리스트 아이템 간격 조정 */
-        font-size: 1.2rem;
+        margin: 0 2.5rem; /* 작은 화면에서는 간격을 줄임 */
     }
 
     .menu {
@@ -986,8 +980,9 @@ footer .back-to-top:hover {
     }
 
     .product-cards {
-        flex-direction: row; /* 카드 가로 배치 */
-        /* flex-wrap: wrap; 카드가 넘칠 경우 줄 바꿈 */
+        flex-direction: row;
+        justify-content: center; /* 가운데 정렬 추가 */
+        gap: 1.5rem;
     }
 
     .product-card img {
@@ -1064,7 +1059,7 @@ footer .back-to-top:hover {
         position: absolute;
         top: 0;
         left: 0;
-        width: 7%;
+        width: 10%;
         height: 100%;
         background-color: #fff;
         z-index: 1;
@@ -1099,13 +1094,13 @@ footer .back-to-top:hover {
     }
 
     .sale-info h4 {
-        font-size: 1.8rem;
+        font-size: 2.5rem;
         font-weight: 700;
     }
 
     .sale-info-content p del {
         color: #666;
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
 
     .sale-info-content p {
@@ -1135,6 +1130,10 @@ footer .back-to-top:hover {
         width: 27.5rem;
     }
 
+    .tab-button {
+        font-size: 2rem;
+    }
+
     /* 여섯 개를 초과하는 .theme-info 요소 숨기기 */
     .theme-info:nth-child(n + 7) {
         display: none;
@@ -1162,7 +1161,7 @@ footer .back-to-top:hover {
 
 @media (max-width: 768px) {
     .inner {
-        width: 100%; /* 테블릿에서는 90% 너비 사용 */
+        width: 95%; /* 테블릿에서는 90% 너비 사용 */
         padding: 0 2rem; /* 좌우 패딩 추가 */
         margin-left: auto; /* 왼쪽 여백 자동 설정 */
         margin-right: auto; /* 오른쪽 여백 자동 설정 */
@@ -1186,9 +1185,6 @@ footer .back-to-top:hover {
     }
 
     .visual {
-        /* 테블릿에서 자연스럽게 43rem 및 45.7rem까지 크기가 조정되는 유동적인 너비와 높이 */
-        width: clamp(43rem, 50vw, 43rem);
-        height: clamp(54rem, 60vw, 45.7rem);
         transition: width 0.3s ease, height 0.3s ease;
     }
 
@@ -1214,19 +1210,18 @@ footer .back-to-top:hover {
     }
 
     .visual strong {
-        font-size: 1.6rem;
+        font-size: 2rem;
         font-weight: 700;
     }
 
     .visual p {
-        font-size: 1.6rem; /* 텍스트 크기 조정 */
-        font-weight: 500;
+        font-size: 2.4rem; /* 텍스트 크기 조정 */
         margin-bottom: 1.5rem;
         margin-top: 3rem;
     }
 
     .visual-title {
-        font-size: 3rem; /* 제목 크기 조정 */
+        font-size: 3.2rem; /* 제목 크기 조정 */
         line-height: 1.2; /* 줄간격 줄이기 */
     }
 

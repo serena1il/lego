@@ -97,7 +97,7 @@
     display: none;
 }
 
-/*  */
+/* ''''''''' */
 .visual {
     background-image: url("../img/community-visual.jpg");
     background-size: 80%;
@@ -216,6 +216,7 @@
     font-size: 4.2rem;
     text-align: center;
     margin-top: 5rem;
+    color: var(--title-color);
 }
 
 .community-con figure img {
@@ -285,6 +286,7 @@
     font-size: 4.2rem;
     text-align: center;
     margin-top: 15rem;
+    color: var(--title-color);
 }
 
 .idea p {
@@ -306,21 +308,7 @@
     border: 1px solid #f0f0f0;
 }
 
-/* .swiper-pagination {
-    text-align: left;
-    padding: 0 0 0 2rem;
-}
-
-.swiper-pagination-bullet {
-    background-color: #ccc; 
-    opacity: 0.7;
-}
-
-.swiper-pagination-bullet-active {
-    background-color: var(--main-color); 
-    width: 1.5rem;
-    border-radius: 30rem;
-} */
+/* '''''''''' */
 
 .container {
     display: flex;
@@ -366,6 +354,7 @@
     font-size: 4.2rem;
     text-align: center;
     margin-top: 15rem;
+    color: var(--title-color);
 }
 
 .fen-card {
@@ -451,6 +440,7 @@
     margin-top: 15rem;
     padding-top: 17rem;
     text-align: center;
+    color: var(--title-color);
 }
 
 .update-card img {

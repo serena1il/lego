@@ -127,4 +127,6 @@ $(function () {
             activeSlider.style.display = "flex"; // 원하는 CSS 적용
         });
     });
+
+    //'''''''''//
 });

@@ -97,7 +97,7 @@
     display: none;
 }
 
-/*  */
+/* ''''''''' */
 .visual {
     background-image: url("../img/best-visual.jpg");
     background-size: 100%;
@@ -165,7 +165,7 @@
     width: 3.3rem;
     height: 3.3rem;
 }
-/*  */
+/* ''''''''''''' */
 
 .location {
     display: flex;
@@ -209,7 +209,8 @@
     opacity: 50%;
 }
 
-/*  */
+/* ''''''''''''' */
+
 .product-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -245,6 +246,7 @@
     font-weight: 700;
     font-size: 4.2rem;
     margin-top: 12.5rem;
+    color: var(--title-color);
 }
 
 .product-item {
@@ -301,7 +303,8 @@ a:hover h3 {
 .wishlist-btn.filled {
     background-image: url(../img/wishlist-fill.svg); /* 채워진 하트 이미지 */
 }
-/*  */
+
+/* '''''''''' */
 
 .view-all {
     display: flex;
