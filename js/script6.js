@@ -31,7 +31,7 @@ $(function () {
             delay: 1000,
             disableOnInteraction: false,
         },
-        speed: 2000,
+        speed: 1500,
         effect: "slide",
         pagination: {
             el: ".swiper-pagination",

@@ -85,7 +85,7 @@ $(function () {
             prevEl: ".swiper-button-prev",
         },
         autoplay: {
-            delay: 3000, // 자동 재생 지연 시간 (밀리초)
+            delay: 1500, // 자동 재생 지연 시간 (밀리초)
             disableOnInteraction: false, // 사용자 상호작용 후에도 자동 재생 유지
         },
     });

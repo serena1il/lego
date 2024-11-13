@@ -58,10 +58,10 @@ $(function () {
         direction: "horizontal",
         loop: true,
         autoplay: {
-            delay: 3000,
+            delay: 1500,
             disableOnInteraction: false,
         },
-        speed: 1000,
+        speed: 800,
         effect: "slide",
         slidesPerView: 1,
         spaceBetween: 50,
