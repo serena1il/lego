@@ -878,7 +878,7 @@ footer .social-icons a {
 
 footer .back-to-top {
     position: fixed;
-    right: 20px;
+    right: 0;
     bottom: 20px;
     background-color: #fff;
     margin-right: 22rem;
@@ -1561,6 +1561,10 @@ footer .back-to-top:hover {
     }
 
     .legal-info .legal-info-text {
+        display: none;
+    }
+
+    footer .back-to-top {
         display: none;
     }
 }
